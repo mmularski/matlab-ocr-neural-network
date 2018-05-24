@@ -1,14 +1,3 @@
-%imgl1 = reshape(im2bw(rgb2gray(imresize(imread('training\l1.png'),[32 32]))),[],1);
-%imgl2 = reshape(im2bw(rgb2gray(imresize(imread('training\l2.png'),[32 32]))),[],1);
-%imgl3 = reshape(im2bw(rgb2gray(imresize(imread('training\l3.png'),[32 32]))),[],1);
-%imgl4 = reshape(im2bw(rgb2gray(imresize(imread('training\l4.png'),[32 32]))),[],1);
-%imgl5 = reshape(im2bw(rgb2gray(imresize(imread('training\l5.png'),[32 32]))),[],1);
-
-%imgo1 = reshape(im2bw(rgb2gray(imresize(imread('training\o1.png'),[32 32]))),[],1);
-%imgo2 = reshape(im2bw(rgb2gray(imresize(imread('training\o2.png'),[32 32]))),[],1);
-%imgo3 = reshape(im2bw(rgb2gray(imresize(imread('training\o3.png'),[32 32]))),[],1);
-%imgo4 = reshape(im2bw(rgb2gray(imresize(imread('training\o4.png'),[32 32]))),[],1);
-%imgo5 = reshape(im2bw(rgb2gray(imresize(imread('training\o5.png'),[32 32]))),[],1);
 
 valimg_org = imread('Letter_T.png');
 %valimg = reshape(im2bw(rgb2gray(imresize(valimg_org,[30 30]))),[],1);
@@ -31,7 +20,7 @@ for file = files'
     %img = extractHOGFeatures(imread(strcat('training\',file.name)));
     
     %prepared_images = [prepared_images img];
-    
+   
     prepared_images1 = [prepared_images1 img1];
 
 end
